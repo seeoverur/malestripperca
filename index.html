@@ -40,7 +40,7 @@ a{color:#fff}a:hover{color:var(--red-2)}
 .link-line{display:inline-block;font-family:Arial,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.22em;font-size:.82rem;color:#fff;text-decoration:none;padding:1.35rem .2rem .4rem;border-bottom:2px solid var(--red)}
 .btn-outline-red{border:1px solid var(--red);border-radius:0;color:#fff;font-family:Arial,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.2em;font-size:.82rem;padding:1.1rem 1.8rem}
 .btn-outline-red:hover{background:var(--red);color:#fff}
-/* hero: images/hero.jpg */
+/* hero: miguel1.png */
 .hero{min-height:92vh;display:flex;align-items:center;background:linear-gradient(90deg,rgba(5,5,12,.92) 0%,rgba(5,5,12,.7) 50%,rgba(5,5,12,.35) 100%),url("miguel1.png") center/cover no-repeat,radial-gradient(circle at 70% 40%,#2a1030 0%,#07070d 70%)}
 .hero h1{font-size:clamp(3rem,8vw,6.4rem)}
 .hero p.lead{max-width:640px;color:#e6e6e6;font-size:1.15rem}
@@ -102,6 +102,24 @@ section{padding:6rem 0}
 .foot-main .logo b{font-size:1.5rem}
 .disclaimer{background:#fff;color:#111;padding:2rem 0;text-align:center;font-size:1.05rem;line-height:1.7}
 .mobile-call{position:fixed;left:0;right:0;bottom:0;z-index:1030;background:var(--red);color:#fff;text-align:center;font-family:Arial,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.18em;padding:1rem;text-decoration:none}
+.topbar{background:#000;border-bottom:1px solid #1c1c1c;font-family:Arial,sans-serif;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:#9a9a9a;padding:.55rem 0}
+.topbar a{color:var(--red);font-weight:700;text-decoration:none;letter-spacing:.12em}
+.navbar{border-bottom:1px solid #1c1c1c}
+.navbar .nav-link{font-family:Arial,sans-serif;letter-spacing:.16em;font-size:.8rem;font-weight:700;position:relative}
+.navbar .nav-link.active,.navbar .nav-link:hover,.navbar .nav-link.show{color:#fff!important}
+@media(min-width:992px){.navbar .nav-link::after{content:"";position:absolute;left:1.1rem;right:1.1rem;bottom:.15rem;height:2px;background:var(--red);transform:scaleX(0);transition:transform .25s;border:0;margin:0}
+.navbar .nav-link:hover::after,.navbar .nav-link.active::after{transform:scaleX(1)}
+.navbar .dropdown-toggle::after{display:block}
+.navbar .dropdown:hover>.dropdown-menu{display:block;margin-top:0}}
+.dropdown-menu-dark{background:#0d0d0d;border:1px solid #262626;border-top:3px solid var(--red);border-radius:0;padding:.6rem 0;min-width:240px}
+.dropdown-menu-dark .dropdown-header{font-family:Arial,sans-serif;color:var(--red);letter-spacing:.22em;font-size:.68rem;text-transform:uppercase}
+.dropdown-menu-dark .dropdown-item{font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:.12em;font-size:.8rem;font-weight:600;padding:.6rem 1.3rem;color:#eee}
+.dropdown-menu-dark .dropdown-item:hover,.dropdown-menu-dark .dropdown-item:focus{background:var(--red);color:#fff}
+.nav-cta{padding:.9rem 1.5rem;font-size:.75rem}
+.nav-call-sm{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;background:var(--red);color:#fff;text-decoration:none;font-size:1.2rem}
+.navbar-toggler{border:1px solid #333;border-radius:0}
+.navbar-toggler:focus{box-shadow:none}
+@media(max-width:991px){.navbar-collapse{border-top:1px solid #1c1c1c;margin-top:.9rem;padding-top:.5rem}.navbar .nav-link{padding:.8rem 0!important;border-bottom:1px solid #1a1a1a}.dropdown-menu-dark{border:0;border-left:3px solid var(--red);margin-bottom:.5rem}}
 @media(min-width:768px){.mobile-call{display:none}}
 @media(max-width:991px){.split-img{min-height:520px}.split-text{padding:3.5rem 1.8rem}.white-card{margin:-6rem 1rem 0}.card-img{min-height:340px}}
 @media(max-width:767px){body{padding-bottom:58px}section{padding:4rem 0}.split-img .inner{padding:2rem}.stats{grid-template-columns:1fr}}
@@ -116,23 +134,42 @@ section{padding:6rem 0}
     "telephone": "+1-647-373-5252",
     "founder": {"@type": "Person", "name": "Miguel", "jobTitle": "Male Exotic Dancer"},
     "address": {"@type": "PostalAddress", "addressLocality": "Toronto", "addressRegion": "ON", "addressCountry": "CA"},
-    "areaServed": [{"@type": "City", "name": "Toronto"}, {"@type": "City", "name": "North York"}, {"@type": "City", "name": "Scarborough"}, {"@type": "City", "name": "Etobicoke"}, {"@type": "City", "name": "Mississauga"}, {"@type": "City", "name": "Brampton"}, {"@type": "City", "name": "Vaughan"}, {"@type": "City", "name": "Markham"}, {"@type": "City", "name": "Richmond Hill"}, {"@type": "City", "name": "Oakville"}, {"@type": "City", "name": "Burlington"}, {"@type": "City", "name": "Hamilton"}, {"@type": "City", "name": "Milton"}, {"@type": "City", "name": "Pickering"}, {"@type": "City", "name": "Ajax"}, {"@type": "City", "name": "Whitby"}, {"@type": "City", "name": "Oshawa"}, {"@type": "City", "name": "Newmarket"}, {"@type": "City", "name": "Aurora"}, {"@type": "City", "name": "Barrie"}, {"@type": "City", "name": "Guelph"}, {"@type": "City", "name": "Kitchener-Waterloo"}, {"@type": "City", "name": "Niagara Falls"}, {"@type": "City", "name": "St. Catharines"}]
+    "areaServed": [{"@type": "City", "name": "Toronto"}, {"@type": "City", "name": "North York"}, {"@type": "City", "name": "Scarborough"}, {"@type": "City", "name": "Etobicoke"}, {"@type": "City", "name": "Mississauga"}, {"@type": "City", "name": "Brampton"}, {"@type": "City", "name": "Vaughan"}, {"@type": "City", "name": "Markham"}, {"@type": "City", "name": "Richmond Hill"}, {"@type": "City", "name": "Oakville"}, {"@type": "City", "name": "Burlington"}, {"@type": "City", "name": "Hamilton"}, {"@type": "City", "name": "Milton"}, {"@type": "City", "name": "Pickering"}, {"@type": "City", "name": "Ajax"}, {"@type": "City", "name": "Whitby"}, {"@type": "City", "name": "Oshawa"}, {"@type": "City", "name": "Newmarket"}, {"@type": "City", "name": "Aurora"}, {"@type": "City", "name": "Barrie"}, {"@type": "City", "name": "Guelph"}, {"@type": "City", "name": "Kitchener-Waterloo"}, {"@type": "City", "name": "Niagara Falls"}, {"@type": "City", "name": "St. Catharines"}, {"@type": "City", "name": "London"}, {"@type": "City", "name": "Muskoka"}, {"@type": "City", "name": "Blue Mountain"}, {"@type": "City", "name": "Collingwood"}]
   }
   </script>
 </head>
 <body>
 
+  <div class="topbar d-none d-md-block">
+    <div class="container d-flex justify-content-between align-items-center">
+      <span>Independent Male Entertainer &middot; Toronto &amp; Ontario</span>
+      <span>Call or Text <a href="tel:+16473735252">647-373-5252</a></span>
+    </div>
+  </div>
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container">
       <a class="logo" href="index.html"><b>MIGUEL</b><small>Toronto Male Stripper</small></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="d-flex align-items-center gap-2 d-lg-none">
+        <a class="nav-call-sm" href="tel:+16473735252" aria-label="Call 647-373-5252">&#9742;</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      </div>
       <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto align-items-lg-center">
+        <ul class="navbar-nav mx-auto align-items-lg-center">
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Locations</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><span class="dropdown-header">Toronto &amp; Beyond</span></li>
+              <li><a class="dropdown-item" href="locations/blue-mountain.html">Blue Mountain</a></li><li><a class="dropdown-item" href="locations/hamilton.html">Hamilton</a></li><li><a class="dropdown-item" href="locations/london.html">London, ON</a></li><li><a class="dropdown-item" href="locations/mississauga.html">Mississauga</a></li><li><a class="dropdown-item" href="locations/muskoka.html">Muskoka</a></li><li><a class="dropdown-item" href="locations/niagara-falls.html">Niagara Falls, ON</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="contact.html#areas">All Service Areas &rarr;</a></li>
+            </ul>
+          </li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link nav-phone" href="tel:+16473735252">647-373-5252</a></li>
         </ul>
+        <a href="tel:+16473735252" class="btn btn-red nav-cta d-none d-lg-inline-block">Book Now &rarr;</a>
+        <a href="tel:+16473735252" class="btn btn-red nav-cta w-100 my-3 d-lg-none">Call 647-373-5252</a>
       </div>
     </div>
   </nav>
@@ -276,13 +313,22 @@ section{padding:6rem 0}
   <footer class="foot-main">
     <div class="container">
       <div class="row g-4 align-items-center">
-        <div class="col-md-4 text-center text-md-start"><a class="logo" href="index.html"><b>MIGUEL</b><small>Toronto Male Stripper</small></a></div>
-        <div class="col-md-5">
+        <div class="col-md-3 text-center text-md-start"><a class="logo" href="index.html"><b>MIGUEL</b><small>Toronto Male Stripper</small></a></div>
+        <div class="col-md-4">
           <div>Independent Male Entertainer</div>
           <div>Toronto, ON &amp; surrounding areas</div>
           <div>Book now: <a href="tel:+16473735252">647-373-5252</a></div>
         </div>
-        <div class="col-md-3 text-md-end">
+        <div class="col-6 col-md-2">
+          <div class="mb-2">Locations</div>
+          <a href="locations/hamilton.html" class="d-block fs-6 text-muted-2">Hamilton</a>
+          <a href="locations/mississauga.html" class="d-block fs-6 text-muted-2">Mississauga</a>
+          <a href="locations/niagara-falls.html" class="d-block fs-6 text-muted-2">Niagara Falls</a>
+          <a href="locations/london.html" class="d-block fs-6 text-muted-2">London</a>
+          <a href="locations/muskoka.html" class="d-block fs-6 text-muted-2">Muskoka</a>
+          <a href="locations/blue-mountain.html" class="d-block fs-6 text-muted-2">Blue Mountain</a>
+        </div>
+        <div class="col-6 col-md-3 text-md-end">
           <div class="mb-2">Quick Links</div>
           <a href="index.html" class="d-block fs-6 text-muted-2">Home</a>
           <a href="about.html" class="d-block fs-6 text-muted-2">About</a>
